@@ -12,28 +12,48 @@ body {
 .container {
   width: 100vw;
   max-width: 100%;
-  min-height: 100vh; /* Забезпечує повну висоту */
-  background-color: white;
-  border: 5px solid black;
+  min-height: 100vh;
+  background-color: #E2CFCF;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  background-color: #a36a1e;
+  background: linear-gradient(to bottom, #B771CA, #FCF1D0);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
 }
 
 .logo {
   width: 50px;
   height: 50px;
   margin-right: 10px;
+  position: absolute;
+  left: 15px;
+  top: 10px;
 }
+
 
 h1 {
   color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  display: flex;
+
+  margin-right: 10px;
+  position: absolute;
+  left: 85px;
+  top: 20px;
+}
+
+h2{
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
 }
 
 main {
@@ -46,16 +66,190 @@ main {
 .profile-img {
   width: 100px;
   border-radius: 5px;
-  margin-right: 15px;
+  margin-right: 20px;
+  display: inline-block;
+  width: 85px;  
+  height: 100px;
 }
-
+.info_0{
+  display: inline-block;
+ 
+}
 .info {
-  flex-grow: 1;
+  
+  flex-direction: column; 
+  font-family: 'Inter' sans-serif;
+  font-size: 12px;
+ 
 }
 
 footer {
-  background-color: #a36a1e;
-  color: white;
+  background: linear-gradient(to top, #B771CA, #FCF1D0);;
+  color: #301F1F;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
   text-align: center;
+  padding: 20px;
+}
+
+.contacts{
+  margin-top: 20px;
+}
+footer .contacts a {
+  font-family: 'Inter', sans-serif; 
+  font-size: 12px; 
+  color: #301F1F; 
+  text-decoration: none; 
+  margin-right: 15px;  
+}
+
+footer .contacts a:hover {
+  color: #B771CA; 
+}
+
+nav {
+  background-color: none;
   padding: 10px;
+}
+
+.bottomcenter {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px; 
+}
+
+.menu a {
+  color: #7B0F74;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.menu a:hover {
+  background-color: #A781E7;
+  border-radius: 5px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  gap: 5px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+
+.header_main {
+  grid-column: 1 / 4;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+
+.ad-block {
+  grid-column: 4 / 4;
+  grid-row: 1 / 8;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.bio, .group, .interesting {
+  grid-column: 1 / 4;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+
+.bio-detail, .group-detail, .interesting-detail {
+  grid-column: 1 / 2;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: right;
+}
+
+
+.hobby {
+  grid-column: span 1;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.footer-ad {
+  grid-column: span 1;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.bio a, .group a, .hobby a, .interesting a {
+  transition: color 0.3s ease;
+}
+
+.bio a:hover, .group a:hover, .hobby a:hover, .interesting a:hover {
+  color: #B771CA;
+}
+
+
+ 
+
+/* Сховуємо деталі за замовчуванням */
+.bio-detail {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* Фото та текст — дві колонки */
+  gap: 15px; /* Між ними відстань */
+  margin-top: 10px;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.bio-image {
+  width: 100%;  /* Робить зображення адаптивним по ширині */
+  height: auto; /* Зберігає пропорції зображення */
+  max-width: 300px; /* Встановлює максимальну ширину */
+  border-radius: 8px;
+   
+}
+
+.bio-text {
+  font-size: 14px; /* Розмір шрифта для біографії */
+  line-height: 1.6; /* Інтерлініяж для тексту */
+}
+
+/* Показуємо деталі, коли checkbox активований */
+.bio-toggle:checked + .bio-detail {
+  display: block;
+}
+
+/* Стилі для посилання */
+.toggle-details {
+  color: #B771CA;
+ 
+  text-decoration: underline;
+}
+
+/* Для анімації */
+.bio-detail {
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.bio-toggle:checked + .bio-detail {
+  max-height: 500px; /* або інша максимальна висота */
 }
