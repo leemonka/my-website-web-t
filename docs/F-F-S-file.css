@@ -149,7 +149,7 @@ nav {
   grid-template-rows: auto;
   gap: 5px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   border: 1px solid black;
 }
@@ -170,10 +170,13 @@ nav {
 }
 
 .bio, .group, .interesting {
+  display: inline-block;
   grid-column: 1 / 4;
   padding: 10px;
   border: 1px solid black;
 }
+
+
 
 
 .bio-detail, .group-detail, .interesting-detail {
@@ -197,59 +200,92 @@ nav {
   border: 1px solid black;
   text-align: center;
 }
-
-.bio a, .group a, .hobby a, .interesting a {
-  transition: color 0.3s ease;
-}
-
-.bio a:hover, .group a:hover, .hobby a:hover, .interesting a:hover {
-  color: #B771CA;
-}
-
-
  
 
-/* Сховуємо деталі за замовчуванням */
-.bio-detail {
-  display: grid;
-  grid-template-columns: 150px 1fr; /* Фото та текст — дві колонки */
-  gap: 15px; /* Між ними відстань */
-  margin-top: 10px;
-  transition: max-height 0.5s ease-out;
-  overflow: hidden;
-  border: 1px solid black;
-}
 .bio-image {
-  width: 100%;  /* Робить зображення адаптивним по ширині */
-  height: auto; /* Зберігає пропорції зображення */
-  max-width: 300px; /* Встановлює максимальну ширину */
-  border-radius: 8px;
-   
+  display: inline-block;
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.ad-cas-image{
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  border: 95%;
+}
+
+.ad-1-image{
+  display: inline-block;
+  width: 200px; 
+  height: 150px;
+  border: 100%;
+}
+
+.ad-2-image{
+  display: inline-block;
+  width: 200px; 
+  height: 150px;
+  border: 100%;
+}
+
+.ad-3-image{
+  display: inline-block;
+  width: 200px; 
+  height: 150px;
+  border: 100%;
+}
+
+
+
+.group-image {
+  display: block;
+  margin: 0 auto;
+  width: 150px; 
+  height: auto;
+}
+
+.logo-fis{
+  width: 30px;
+  height: 20px;
+
 }
 
 .bio-text {
-  font-size: 14px; /* Розмір шрифта для біографії */
-  line-height: 1.6; /* Інтерлініяж для тексту */
+  display: inline-block;
+  width: calc(100% - 170px); 
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #301F1F;
 }
 
-/* Показуємо деталі, коли checkbox активований */
-.bio-toggle:checked + .bio-detail {
-  display: block;
-}
 
-/* Стилі для посилання */
 .toggle-details {
-  color: #B771CA;
- 
+  color: #8a4f9e;
   text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-/* Для анімації */
-.bio-detail {
-  max-height: 0;
-  transition: max-height 0.5s ease;
+.toggle-details:hover {
+  color: #B771CA; 
 }
 
-.bio-toggle:checked + .bio-detail {
-  max-height: 500px; /* або інша максимальна висота */
+.toggle-detail {
+  display: none;
+  margin-top: 10px;
+}
+
+.show-info{
+  display: inline-block;
+  width: 100%;
+}
+.toggle-input:checked ~ .toggle-detail {
+  display: inline-block;
 }

@@ -28,9 +28,10 @@
             </div>
           <nav class="bottomcenter">
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <img src="images/logo_fis.jpg" alt="Логотип фісу" class="logo-fis">
+                <li><a href="https://tntu.edu.ua/?p=uk/structure/faculties/fis">Про факультет</a></li>
+                <li><a href="https://tntu.edu.ua/?p=uk/schedule&s=fis-sp33">Розклад занять</a></li>
+                <li><a href="https://tntu.edu.ua/?p=uk/news">Новини</a></li>
             </ul>
           </nav>
         </header>
@@ -38,33 +39,96 @@
         <main>
             <div class="layout">
                 
-                <div class="header_main">Заголовок сторінки</div>
-                <div class="ad-block">Рекламний блок</div>
+                 <div class="header_main">Персональна інформація</div>
+
+                <div class="ad-block">
+                  <img src="images/game.png" alt="Рекламний блок" class="ad-cas-image">
+                </div>
+               
             
-                <div class="bio"><p>Біографія (1 речення)</p>
-                    <label for="bio-toggle" class="toggle-details">Детальніше >></label>
-                    <input type="checkbox" id="bio-toggle" class="bio-toggle">
-                    <div class="bio-detail">
-                        <p class="bio-text">Вікторія Юрчишина — студентка 3-го курсу факультету інформаційних систем та технологій ТНТУ ім. Івана Пулюя. Народилася та виросла в Тернополі. З раннього дитинства цікавилася комп'ютерними технологіями, що згодом стало її професійним покликанням. Університет обрала завдяки своїй пристрасті до програмування та інженерії. Вікторія бере участь у різних конкурсах з програмування та активно займається самоосвітою, вивчаючи нові технології та підходи в розробці програмного забезпечення.</p>
-                        <img src="images/bio-image.jpg" alt="Фото біографії" class="bio-image">
-                      <img src="images/profile_foto.png" alt="Біографія" class="bio-image">
+                <div class="bio"><p>Юрчишина Вікторія Андріївна, студентка факультету ФІС в Тернопільському технічному університеті імені Івана Пулюя.</p>
+            
+                  <input type="checkbox" id="group-toggle-0" class="toggle-input" hidden>
+                  <label for="group-toggle-0" class="toggle-details">Детальніше >></label>
+                    <div class="toggle-detail">
+                       <div class ="show-info">
+                        <img src="images/profile_foto.png" alt="Біографія" class="bio-image">
+                        <p class="bio-text"> Вікторія Юрчишина — студентка 3-го курсу факультету інформаційних систем та технологій ТНТУ ім. Івана Пулюя. Народилася та виросла в Тернополі. З раннього дитинства цікавилася комп'ютерними технологіями, що згодом стало її професійним покликанням. Університет обрала завдяки своїй пристрасті до програмування та інженерії. Вікторія бере участь у різних конкурсах з програмування та активно займається самоосвітою, вивчаючи нові технології та підходи в розробці програмного забезпечення. У майбутньому Вікторія мріє працювати в міжнародній ІТ-компанії, де зможе реалізовувати великі проєкти та здобувати безцінний досвід. Вона також планує здобути додаткову освіту за кордоном, щоб розширити свої професійні горизонти. Її мета — створювати інноваційні продукти, що змінюють світ на краще, а також надихати інших молодих людей обирати кар’єру в сфері технологій.</p>
+                        
+                      </div>
                     </div>
                 </div>
-                <div class="group">Група (1 речення) <br> <a href="#">Детальніше >></a></div>
+                
+                <div class="group">Група СП-33 складається з 12 чоловік.<br> 
+                  <input type="checkbox" id="group-toggle-1" class="toggle-input" hidden>
+                  <label for="group-toggle-1" class="toggle-details">Детальніше >></label>
+                  <div class="toggle-detail">
+                    <img src="images/logo_sp.png" alt="Група" class="group-image">
+                    <p>Група СП-33 — це команда амбітних студентів, яка активно бере участь у наукових заходах і проектах, зосереджуючись на розвитку навичок в інформаційних технологіях. Студенти працюють з передовими технологіями, що дозволяє їм бути конкурентоспроможними на ринку праці. Вони вчаться поєднувати теоретичні знання з практичним досвідом, що допомагає успішно проходити практику та отримувати робочі місця ще до закінчення навчання..</p>
+                  </div>
+                </div>
                 
             
-                <div class="hobby">Хоббі 1 (1 речення) <br> <a href="#">Детальніше >></a></div>
-                <div class="hobby">Хоббі 2 (1 речення) <br> <a href="#">Детальніше >></a></div>
-                <div class="hobby">Хоббі 3 (1 речення) <br> <a href="#">Детальніше >></a></div>
+                <div class="hobby">Хобі 1 - Баскетбол <br> 
+                  <input type="checkbox" id="hobby-toggle-1" class="toggle-input" hidden>
+                  <label for="hobby-toggle-1" class="toggle-details">Детальніше >></label>
+                  <div class="toggle-detail">
+                    <p>Баскетбол — це не просто хобі для неї, а справжня пристрасть. Протягом чотирьох років вона була капітаном баскетбольної команди, і цей досвід навчив її лідерства, командної роботи та стійкості. Кожен матч був можливістю продемонструвати свою відданість справі і підтримати команду. Для неї баскетбол — це більше ніж спорт, це культура взаємопідтримки та злагодженої роботи. Цей досвід став важливим етапом у її житті, який допоміг сформувати навички, що вона використовує і в інших сферах..</p>
+                  </div>
+                </div>
+
+                <div class="hobby">Хобі 2 - Книги  <br> 
+                  <input type="checkbox" id="hobby-toggle-2" class="toggle-input" hidden>
+                  <label for="hobby-toggle-2" class="toggle-details">Детальніше >></label>
+                  <div class="toggle-detail">
+                    <p>Читання книг — це друге велике захоплення для Вікторії, яке дозволяє поринути в інші світи. Вона особливо любить детективи та хорори, де кожна сторінка сповнена напруження та інтригуючих поворотів. Вона насолоджується тим, як розгадує складні загадки разом з героями детективів або відчуває страшний атмосферний напругу в хорорах. Ці жанри дозволяють їй відчути нові емоції та випробувати цікаві виклики для розуму, що робить читання ще більш захоплюючим.</p>
+                  </div>
+                </div>
+
+                <div class="hobby">Хобі 3 - Подорожі з друзями <br> 
+                  <input type="checkbox" id="hobby-toggle-3" class="toggle-input" hidden>
+                  <label for="hobby-toggle-3" class="toggle-details">Детальніше >></label>
+                  <div class="toggle-detail">
+                    <p>Подорожі з друзями — це третє велике хобі для Вікторії, яке приносить багато радості та нових вражень. Вона обожнює подорожувати різними містами України, відкриваючи нові культури та традиції. Крім того, не менш важливе місце займають поїздки на природу, де можна насолоджуватися тишею та красою навколишнього світу, проводячи час з близькими людьми. Ці подорожі не тільки розширюють кругозір, а й дарують незабутні моменти, які залишаються в пам'яті на довго.</p>
+                  </div>
+                </div>
             
-                <div class="interesting">Цікаве 1 (1 речення) <br><a href="#">Детальніше >></a></div>
-                <div class="interesting">Цікаве 2 (1 речення) <br><a href="#">Детальніше >></a></div>
-                <div class="interesting">Цікаве 3 (1 речення) <br><a href="#">Детальніше >></a></div>
+                <div class="interesting">Цікаве 1 (Участь у польових зборах) <br>
+                  <input type="checkbox" id="interesting-toggle-1" class="toggle-input" hidden>
+                  <label for="interesting-toggle-1" class="toggle-details">Детальніше >></label>
+                  <div class="toggle-detail">
+                    <p>Розгорнута інформація про цікаве 1.</p>
+                  </div>
+                </div>
+
+                <div class="interesting">Цікаве 2 (Найзахопливіші подорожі) <br>
+                  <input type="checkbox" id="interesting-toggle-2" class="toggle-input" hidden>
+                  <label for="interesting-toggle-2" class="toggle-details">Детальніше >></label>
+                  <div class="toggle-detail">
+                    <p>Розгорнута інформація про цікаве 2.</p>
+                  </div>
+                </div>
+
+                <div class="interesting">Цікаве 3 (Участь у волонтерських проектах) <br>
+                  <input type="checkbox" id="interesting-toggle-3" class="toggle-input" hidden>
+                  <label for="interesting-toggle-3" class="toggle-details">Детальніше >></label>
+                  <div class="toggle-detail">
+                    <p>Розгорнута інформація про цікаве 3.</p>
+                  </div>
+                </div>
             
 
-                  <div class="footer-ad">Рекламний блок 1</div>
-                  <div class="footer-ad">Рекламний блок 2</div>
-                  <div class="footer-ad">Рекламний блок 3</div>
+                  <div class="footer-ad">
+                    <img src="images/ad_1.png" alt="Рекламний блок 1" class="ad-1-image">
+                  </div>
+
+                  <div class="footer-ad">
+                    <img src="images/ad-2.png" alt="Рекламний блок 2" class="ad-2-image">
+                  </div>
+
+                  <div class="footer-ad">
+                    <img src="images/ad-3.png" alt="Рекламний блок 3" class="ad-3-image">
+                  </div>
             
             </div> 
               
