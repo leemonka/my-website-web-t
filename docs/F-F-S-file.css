@@ -219,8 +219,15 @@ nav {
   border: 95%;
 }
 
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* якщо треба по вертикалі теж */
+  height: 100%; 
+}
+
 .ad-1-image{
-  display: inline-block;
+  /* display: inline-block; */
   width: 200px; 
   height: 150px;
   border: 100%;
