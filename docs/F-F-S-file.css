@@ -243,4 +243,19 @@ footer .contacts a {
     .block_group {
       flex: 1 1 calc(50% - 10px); /* Два в ряд */
     }
+
+    .large_block {
+      flex-direction: column;
+    }
+  
+    .block_ad {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .ad {
+      height: auto;
+      width: 45%;
+    }
   }
