@@ -41,7 +41,6 @@ body{
 .block_line{
     background-color: #E2CFCF;;
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     padding: 5px;
 }
@@ -234,37 +233,4 @@ footer .contacts a {
     display: flex;
   }
 
-  @media (max-width: 600px) {
-    .block_group {
-      flex: 1 1 100%; /* Один в ряд */
-    }
-  }
-
-  @media (max-width: 992px) {
-    .block_group {
-      flex: 1 1 calc(50% - 10px); /* Два в ряд */
-    }
-
-    .large_block {
-      flex-direction: column;
-    }
-  
-    .block_ad {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-    }
-  
-    .ad {
-      height: auto;
-      width: 45%;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    .main {
-      width: 100%;
-      padding: 0 10px;
-    }
-  }
   
