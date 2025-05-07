@@ -30,9 +30,10 @@ body{
 }
 
 .block_group{
-    display: block;
+    
     border: 1px solid rgb(115, 80, 113);
     width: 32.9%;
+    flex: 1 1 calc(33.33% - 10px);
     border-radius: 10px;
     text-align: center;
 }
