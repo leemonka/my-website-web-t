@@ -264,15 +264,15 @@ footer .contacts a {
 
 
   .block_line{
-    
+    width: 98.5%;
     flex-direction: column;
   }
   .block_group{
-    width: 100%;
+    width: 98%;
   }
 
   .block{
-     width: 100%;
+     width: 98%;
   }
 
   .large_block{
@@ -305,4 +305,32 @@ footer .contacts a {
  .block_ad{
   display: none;
   }
+
+  .columns-container{
+    flex-direction: column;
+    gap: 10px; 
+    margin: 10px;
+  }
+}
+
+.columns-container {
+  display: flex;
+  gap: 20px; 
+  margin: 20px;
+}
+
+.col {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#col-1{
+  order: 3;
+}
+#col-2{
+  order: 4;
 }
