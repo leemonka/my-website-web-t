@@ -241,6 +241,19 @@ footer .contacts a {
     display: flex;
   }
 
+  .for_text_h3{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #A781E7;
+    width: fit-content;
+  margin: 0 auto; 
+  }
+
 @media (max-width: 600px) {
   .menu {
     flex-direction: row;
@@ -248,6 +261,7 @@ footer .contacts a {
   }
 
   .block_line{
+    
     flex-direction: column;
   }
   .block_group{
@@ -266,6 +280,8 @@ footer .contacts a {
 
 
   .header{
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
