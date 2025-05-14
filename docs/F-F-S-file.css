@@ -19,7 +19,6 @@ body{
     width: 1200px; 
     margin: 0 auto;
     background-color:#E2CFCF;
-    flex: 1 0 auto;
 }
 
 .block{
@@ -27,6 +26,8 @@ body{
     margin: 5px;
    border: 1px solid rgb(115, 80, 113);
    border-radius: 10px;
+
+   
 }
 
 .block_group{
@@ -57,6 +58,9 @@ body{
     height: 100%;
     font-family: 'Inter', sans-serif; 
     font-size: 14px; 
+
+    max-width: 1200px;
+    min-width: 200px;
 }
 
 .block_ad{
@@ -232,4 +236,13 @@ footer .contacts a {
     display: flex;
   }
 
-  
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .block_line{
+    flex-direction: column;
+  }
+}
