@@ -254,7 +254,7 @@ footer .contacts a {
   margin: 0 auto; 
   }
 
-@media (max-width: 570px) {
+@media (max-width: 430px) {
   .menu {
     flex-direction: row;
     justify-content: flex-start;
