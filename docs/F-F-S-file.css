@@ -38,8 +38,8 @@ body{
 .block_group{
     
     border: 1px solid rgb(115, 80, 113);
-    width: 32.9%;
-    
+    width: 32.3%;
+    margin: 1px;
     border-radius: 10px;
     text-align: center;
 }
@@ -241,7 +241,7 @@ footer .contacts a {
     display: flex;
   }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .menu {
     flex-direction: row;
     justify-content: flex-start;
@@ -250,16 +250,22 @@ footer .contacts a {
   .block_line{
     flex-direction: column;
   }
+  .block_group{
+    width: 100%;
+    /* margin: 0 auto; */
+  }
 
   .block{
-     width: 32.9%;
+     width: 100%;
   }
 
   .large_block{
     flex-direction: column;
   }
 
-  body{
-   width: 32.9%;
+
+
+  .header{
+    flex-direction: column;
   }
 }
