@@ -12,12 +12,17 @@ body{
     background: linear-gradient(to bottom, #B771CA, #FCF1D0);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    align-items: flex-start; 
 }
 
 .main{
-    width: 1200px; 
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
     background-color:#E2CFCF;
 }
 
@@ -143,10 +148,8 @@ footer .contacts a {
   }
 
   .short_info{
-    display: inline-block;
     vertical-align: top; 
     text-align: center;
-    margin-left: 200px;
   }
   
   .short_info *{
@@ -161,6 +164,7 @@ footer .contacts a {
   }
 
   .profile_foto{
+    
     width: 85px;
     height: 100px;
     
@@ -181,6 +185,7 @@ footer .contacts a {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
   }
 
   .menu li{
