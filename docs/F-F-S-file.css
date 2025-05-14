@@ -245,4 +245,16 @@ footer .contacts a {
   .block_line{
     flex-direction: column;
   }
+
+  .block{
+     width: 32.9%;
+  }
+
+  .large_block{
+    flex-direction: column;
+  }
+
+  body{
+   width: 32.9%;
+  }
 }
