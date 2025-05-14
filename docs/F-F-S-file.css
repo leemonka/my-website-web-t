@@ -50,6 +50,11 @@ body{
     width: 100%;
     padding: 5px;
 }
+.block_line_2{
+   display: flex;
+    width: 100%;
+    padding: 5px;
+}
 
 .big_block{
     display: block;
@@ -254,7 +259,7 @@ footer .contacts a {
   margin: 0 auto; 
   }
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .menu {
     flex-direction: row;
     justify-content: flex-start;
@@ -266,7 +271,6 @@ footer .contacts a {
   }
   .block_group{
     width: 100%;
-    /* margin: 0 auto; */
   }
 
   .block{
@@ -277,11 +281,31 @@ footer .contacts a {
     flex-direction: column;
   }
 
-
+  .big_block{
+    width: 100%;
+  }
 
   .header{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .ad_others{
+     max-width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px; 
+  }
+.block_ad{
+  display: none;
+  
+}
 }
