@@ -21,7 +21,7 @@ body{
     align-items: start; 
 }
 
-.main{
+.main-1{
     /* width: 100%; */
     display: grid;
     grid-template-columns: auto 15%;
@@ -359,6 +359,7 @@ footer .contacts a {
   width: 100px;
   height: 150px;
 }
+
 
 
 
