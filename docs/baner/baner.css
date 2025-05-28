@@ -67,6 +67,16 @@
     }
 }
 
+@keyframes running-text {
+  0% {
+    transform: translateX(0%); 
+  }
+ 
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
 .banner{
   
     display: flex;
@@ -121,6 +131,11 @@
 .main{
      background-image: url(background.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
 }
 
 .im-part{
@@ -189,4 +204,21 @@
    transform:  rotate3d(1, 0, 0, 360deg);
 }
 
+.text-running{
+    font-size: 30px;
+    color: rgb(206, 206, 206);
+display: inline-block;
+     padding-left: 100%;
+    animation-name: running-text;
+    animation-duration: 10s ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.runner{
+    max-width: 100%;
+   overflow: hidden;
+   white-space:nowrap; ;
+   
+}
     
