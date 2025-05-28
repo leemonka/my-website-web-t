@@ -207,7 +207,7 @@
 .text-running{
     font-size: 30px;
     color: rgb(206, 206, 206);
-display: inline-block;
+    display: inline-block;
      padding-left: 100%;
     animation-name: running-text;
     animation-duration: 10s ;
@@ -221,4 +221,84 @@ display: inline-block;
    white-space:nowrap; ;
    
 }
+
+
+@media (max-width: 728px){
+    .text-banner, .text-running{
+        font-size: 20px;
+    }
+
+    .text-banner:hover{
+     font-size: 24px;   
+   }
+
+  .item {
+    margin: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 468px){
+   
+.text-banner, .text-running{
+        font-size: 16px;
+    }
+
+    .text-banner:hover{
+     font-size: 18px;   
+   }
+
+  .item {
+    margin: 10px 10px;
+  }
+}
+
+@media  (max-width: 300px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-second img{
+        order: 2;
+    }
+
+    .item-first{
+        width: 93%;
     
+    }
+
+}
+
+@media (max-height:600px){
+.banner{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:1px;
+    }
+}
+@media (max-height: 400px){
+    .banner{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+}
+
+@media(max-height: 250px){
+   .banner{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:1px;
+    }
+
+    .text-banner, .text-running{
+        font-size: 11px;
+    }
+
+    
+}
