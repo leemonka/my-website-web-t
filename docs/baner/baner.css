@@ -1,0 +1,121 @@
+@keyframes move-to-right-left{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translate(100%);
+    }
+    100% {
+        transform: translateX(0);
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes move-down-up{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.banner{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.text-banner-1{
+    color: rgb(206, 206, 206);
+    font-size: 34px;
+    background-color: rgba(102, 131, 157, 0.377);
+    display: inline;
+    padding: 5px;
+    border-radius: 10px;
+   text-align: center;
+}
+
+.text-banner-2{
+    color: rgb(206, 206, 206);
+    font-size: 34px;
+    background-color: rgba(0, 0, 0, 0.377);
+    display: inline;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text-banner-3{
+    color: rgb(206, 206, 206);
+    font-size: 34px;
+    background-color: rgba(102, 131, 157, 0.377);
+    display: inline;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text-banner:hover{
+    font-size: 36px;
+    color: blueviolet;
+
+}
+
+.main{
+     background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.im-part{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.im-robo{
+     max-width: 100%;
+    height: auto;
+}
+
+.im-connect{
+    max-width: 100%;
+    height: auto;
+}
+
+.im-girl-in-glass{
+     max-width: 100%;
+    height: auto;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    border: 3px solid rgba(0, 0, 0, 0.377);
+    border-radius: 10px;
+}
+
+.item-first{
+  align-self: flex-start;
+  width: 600px; 
+  max-width: 750px; 
+  max-height: 300px; 
+    
+}
+
+.item-second{
+    align-self: center;
+    animation-name: move-down-up; 
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.item-third{
+    align-self: flex-end;
+}
+    
