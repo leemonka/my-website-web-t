@@ -1,3 +1,11 @@
+function checkSymbol(kc) {
+      // Дозволяємо лише цифри (від 48 до 57)
+      if (kc < 48 || kc > 57) {
+        return false;
+      }
+      return true;
+    }
+
 function showCustomMenu(sign, x, y) {
   const cm = document.getElementById("custommenu");
   if (sign) {
