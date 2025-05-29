@@ -176,6 +176,12 @@ footer .contacts a {
     
   }
 
+  .hovered{
+    width: 85px;
+    height: 100px;
+    border-radius: 1000px;
+}
+
   h2{
     color: black;
     font-family: 'Inter', sans-serif;
@@ -358,6 +364,31 @@ footer .contacts a {
 .im-2-tech{
   width: 100px;
   height: 150px;
+}
+
+
+#custommenu {
+  width: 250px;
+  visibility: hidden;
+  background-color: #ddd;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  position: absolute;
+}
+
+#custommenu div {
+  background-color: silver;
+  color: navy;
+  font-size: 10pt;
+  padding: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+#custommenu div:hover {
+  background-color: #bbb;
+  border: 2px solid navy; 
 }
 
 

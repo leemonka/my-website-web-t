@@ -300,3 +300,29 @@
 
     
 } */
+
+ .currency-widget-container {
+      text-align: center;
+    }
+    .currency-widget-iframe {
+      height: 350px;
+      width: 350px;
+      border: 0; 
+    }
+
+    .wig-grid{
+        display: flex;
+        flex-direction: row;
+        
+        gap: 10px;
+        border: 1px solid #000;
+        background-color: rgba(14, 73, 59, 0.377);
+        
+    }
+
+    .wig-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      
+    }

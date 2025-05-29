@@ -6,8 +6,109 @@
     <title>Особиста сторінка</title>
     <link rel="stylesheet" href="F-F-S-file.css" />
     <link rel="stylesheet" href="baner/baner.css" />
+    <link rel="stylesheet" href="for-lab-10.css" />
+    <script src="for-lab-10.js" defer></script>
   </head>
-  <body>
+  <body
+    oncontextmenu="showCustomMenu(true, event.clientX, event.clientY); return false;"
+    onclick="showCustomMenu(false);"
+  >
+    <div class="wig-grid">
+      <div class="wig-item">
+        <div class="currency-widget-container">
+          <iframe
+            class="currency-widget-iframe"
+            title="Xe FX widget"
+            src="https://www.xe.com/currencyconverter/fx-widget?amount=1&from=USD&to=EUR"
+          ></iframe>
+        </div>
+        <div class="wig-item">
+          <iframe
+            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fleemonka.github.io%2Fmy-website-web-t%2FF-F-S-file.html&width=20px&layout&action&size&share=true&height=35&appId"
+            width="100px"
+            height="100px"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+        <div class="wig-item">
+          <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://www.meteoprog.com/css/winformer.min.css?id=100"
+          />
+
+          <div
+            class="meteoprog-informer"
+            style="width: 284px"
+            data-params='{"city_ids":"2790","domain":"https://www.meteoprog.com/ua/","id":"6837507ae0bf1b0f0f00a633","lang":"ua"}'
+          >
+            <a
+              title="Погода в місті Тернопіль"
+              target="_blank"
+              href="https://www.meteoprog.com/ua/weather/Ternopil/"
+            >
+              <img
+                style="margin: 0 auto; display: block"
+                src="https://www.meteoprog.com/images/preloader.gif"
+                alt="Loading..."
+              />
+            </a>
+            <a
+              target="_blank"
+              class="constructor__met2wlink"
+              href="https://www.meteoprog.com/ua/review/Ternopil/"
+              >Погода на 2 тижні</a
+            >
+
+            <a
+              class="constructor__metlink"
+              target="_blank"
+              href="https://www.meteoprog.com/ua/"
+            >
+              <img
+                style="display: block; margin: 0 auto"
+                alt="Meteoprog"
+                src="https://www.meteoprog.com/images/meteoprog-inf.png"
+              />
+            </a>
+          </div>
+          <script
+            type="text/javascript"
+            src="https://www.meteoprog.com/js/winformer.min.js?id=100"
+          ></script>
+        </div>
+        <div class="wig-item">
+          <iframe
+            src="https://free.timeanddate.com/clock/i9wwf6m0/n5643/szw110/szh110/hoc000/hbw2/hfceee/cf100/hncccc/fdi76/mqc000/mql10/mqw4/mqd98/mhc000/mhl10/mhw4/mhd98/mmc000/mml10/mmw1/mmd98"
+            frameborder="0"
+            width="110"
+            height="110"
+          ></iframe>
+        </div>
+        <div class="wig-item">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6690.829630260239!2d25.59538385841067!3d49.54677568908093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473036afc17d6a71%3A0x84539a0a605d037c!2z0JDQstGC0L7QstC-0LrQt9Cw0Ls!5e0!3m2!1suk!2sua!4v1748457677527!5m2!1suk!2sua"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <input
+      type="text"
+      onkeypress="return checkSymbol(event.keyCode || event.which)"
+      placeholder="Тільки цифри"
+    />
+
     <header class="header">
       <div class="header_title">
         <img src="images/tntu_logo.png" alt="logo" class="logo_tntu" />
@@ -49,8 +150,8 @@
         </nav>
       </div>
     </header>
+
     <div class="main-1">
-      <!-- ***** -->
       <div class="big_block">
         <div class="block">
           <p>Особиста інформація</p>
@@ -67,10 +168,12 @@
             <summary>Детальніше>></summary>
             <div class="bio-content">
               <img
+                id="hoverImage"
                 src="images/profile_foto.png"
                 alt="photo in bio"
                 class="bio_img"
               />
+
               <p>
                 Вікторія Юрчишина — студентка 3-го курсу факультету
                 інформаційних систем та технологій ТНТУ ім. Івана Пулюя.
@@ -284,8 +387,8 @@
         <img src="images/game.png" alt="ad" class="ad" />
         <img src="images/ad-2.png" alt="ad-2" class="ad" />
       </div>
-      <!-- лаьіва -->
     </div>
+
     <div class="main">
       <div class="banner">
         <div class="item item-first">
@@ -314,6 +417,7 @@
         </p>
       </div>
     </div>
+
     <footer>
       <p>Зв'язатися зі мною</p>
       <div class="contacts">
@@ -326,5 +430,13 @@
         >
       </div>
     </footer>
+    <!-- для меню -->
+    <div id="custommenu">
+      <div onclick="doAction('copy')">Скопіювати вміст документа</div>
+      <div onclick="doAction('close')">Закрити вікно</div>
+      <div onclick="doAction('fontIncrease')">Збільшити шрифт</div>
+      <div onclick="doAction('fontDecrease')">Зменшити шрифт</div>
+      <div onclick="doAction('changeBkg')">Змінити фон</div>
+    </div>
   </body>
 </html>
